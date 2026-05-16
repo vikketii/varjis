@@ -1,13 +1,12 @@
-collections:
-    authors:
-        output: true
+title: Varjokirjamessut
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Varjokirjamessujen kotisivut
+domain: vikketii.github.io # if you want to force HTTPS, specify the domain without the http at the start
+url: "https://vikketii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/varjis" # the subpath of your site, e.g. /blog
 
 defaults:
-    - scope:
-        path: ""
-        type: "authors"
-      values:
-        layout: "author"
     - scope:
         path: ""
         type: "posts"
