@@ -1,9 +1,9 @@
 <nav class="main-nav">
   {% for item in site.data.navigation %}
-  <div {% if page.url == item.link %} class="current" {% endif %}>
-    <a href="{{ item.link }}">
+    <a href="{{ item.link | relative_url }}">
+      <div {% if page.url == item.link %} class="current" {% endif %}>
       {{ item.name }}
+      </div>
     </a>
-  </div>
-    {% endfor %}
+  {% endfor %}
 </nav>

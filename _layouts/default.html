@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
     <div class="header-img-container">
       {% if page.header-image %}
-      <img src="/assets/images/{{ page.header-image }}" class="header-img"/>
+      <img src="{{ '/assets/images/' | append: page.header-image | relative_url }}" class="header-img"/>
       {% else %}
-      <img src="/assets/images/varjis-banner.jpg" class="header-img"/>
+      <img src="{{'/assets/images/varjis-banner.jpg' | relative_url}}" class="header-img"/>
       {% endif %}
     </div>
     <div class="main-container">

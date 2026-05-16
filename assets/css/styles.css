@@ -43,11 +43,10 @@ body {
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
+    gap: 10px;
 }
 
 .main-nav div {
-    margin: 0 8px;
     padding: 4px 12px;
     border: 1px solid rgb(38, 38, 38);
     border-radius: 12px;
@@ -55,9 +54,6 @@ body {
         1px 1px 0 0px rgb(38, 38, 38);
 }
 
-.main-nav:first-child div {
-    margin-left: 0px;
-}
 
 .current {
     background-color: rgb(240, 243, 186);
@@ -85,7 +81,6 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* margin: 20px; */
 }
 
 a {
