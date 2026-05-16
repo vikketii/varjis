@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>
+    <div class="header-img-container">
+      {% if page.header-image %}
+      <img src="/assets/images/{{ page.header-image }}" class="header-img"/>
+      {% else %}
+      <img src="/assets/images/varjis-banner.jpg" class="header-img"/>
+      {% endif %}
+    </div>
+    <div class="main-container">
+      <div class="double-border">
+        <div class="polka">
+          <div class="content-container">
+            {% include navigation.html %} 
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

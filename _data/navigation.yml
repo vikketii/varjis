@@ -1,0 +1,12 @@
+- name: Varjokirjamessut
+  link: /
+- name: Ohjelma
+  link: /ohjelma.html
+- name: Näytteilleasettajat
+  link: /naytteilleasettajat.html
+- name: Sijainti
+  link: /sijainti.html
+- name: Saavutettavuus
+  link: /saavutettavuus.html
+- name: Arkisto
+  link: /arkisto.html

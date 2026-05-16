@@ -1,0 +1,96 @@
+
+body {
+    /* background: #f5f4f0; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.double-border {
+    width: 80vw;
+    max-width: 1000px;
+    border: 3px double rgb(38, 38, 38);
+    border-radius: 10px;
+}
+
+.polka {
+    border-radius: 6px;
+    padding: 1rem;
+    background-image: 
+        radial-gradient(rgb(38, 38, 38) 30%, transparent 0),
+        radial-gradient(rgb(38, 38, 38) 30%, transparent 0);
+    background-position: 0px 0px, 3px 3px;
+    background-size: 6px 6px;
+    background-color: #f5f4f0;
+}
+
+.content-container {
+    /* min-height: calc(100vh - 22px); */
+    /* width: 100%; */
+    border: 2px solid rgb(38, 38, 38);
+    border-radius: 10px;
+    /* margin: 0 auto; */
+    padding: 2rem;
+    background: #f5f4f0;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.main-nav div {
+    margin: 0 8px;
+    padding: 4px 12px;
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 12px;
+    box-shadow: 
+        1px 1px 0 0px rgb(38, 38, 38);
+}
+
+.main-nav:first-child div {
+    margin-left: 0px;
+}
+
+.current {
+    background-color: rgb(240, 243, 186);
+    box-shadow: 1px 1px 0 0px inset rgb(38, 38, 38) !important;
+}
+
+.main-nav div:hover {
+    background-color: rgb(240, 243, 186);
+    box-shadow: 1px 1px 0 0px inset rgb(38, 38, 38);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+.header-img-container {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* margin: 20px; */
+}
+
+a {
+    color: rgb(38, 38, 38);
+}
